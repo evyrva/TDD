@@ -1,0 +1,12 @@
+.gradle
+gradle
+version.properties
+/build/
+
+*.log
+
+### IntelliJ IDEA ###
+.idea
+*.iws
+*.iml
+*.ipr

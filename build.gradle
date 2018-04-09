@@ -6,9 +6,19 @@ apply plugin: 'java'
 sourceCompatibility = 1.8
 
 repositories {
+    mavenLocal()
     mavenCentral()
+    jcenter()
 }
 
 dependencies {
-    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile 'org.apache.logging.log4j:log4j-slf4j-impl:+',
+            'io.vavr:vavr:+'
+
+    testCompile 'org.junit.jupiter:junit-jupiter-params:+',
+            'org.hamcrest:java-hamcrest:+',
+            'org.mockito:mockito-all:+'
+
+    compileOnly name: ':lombok-edge:',
+            'edu.washington.cs.types.checker:checker-framework:+'
 }

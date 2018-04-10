@@ -19,6 +19,8 @@ dependencies {
             'org.hamcrest:java-hamcrest:+',
             'org.mockito:mockito-all:+'
 
-    compileOnly name: ':lombok-edge:',
-            'edu.washington.cs.types.checker:checker-framework:+'
+//    compileOnly name: ':lombok-edge:',
+//            'edu.washington.cs.types.checker:checker-framework:+'
+
+    compileOnly('org.projectlombok:lombok:1.16.20')
 }
